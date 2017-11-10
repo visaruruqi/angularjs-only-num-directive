@@ -15,7 +15,7 @@ angular
 
         var keyCode = [0, 8, 9, 46, 45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
         element.bind("keypress", function (event) {
-            //console.log($.inArray(event.which, keyCode));
+           
             if ($.inArray(event.which, keyCode) === -1) {
                 scope.$apply(function () {
                     scope.$eval(attrs.onlyNum);
